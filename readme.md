@@ -1,34 +1,56 @@
+# 🔒 Smart Lock System
+
+A comprehensive smart lock solution developed entirely in-house. This project combines custom hardware, embedded systems, and a mobile app to create a secure and convenient way to manage access to your space.
+
+## Overview
+
+This smart lock system was built from the ground up with security and user experience in mind. Every component - from the physical lock mechanism to the mobile application - was designed and developed in this project.
+
+### Components
+
+#### Mobile Application
+- React Native app for iOS and Android
+- Real-time lock status monitoring
+- Secure user authentication
+- Intuitive chat-based interface
+
+#### Hardware
+- Custom-designed lock mechanism
+- Embedded systems integration
+- Fail-safe mechanical override
+
+#### Backend Infrastructure
+- Real-time Firebase integration
+- Secure communication protocols
+- Robust error handling
+- Scalable architecture
+
+## Project Structure
+
 /app
-  |_ tabs/                   # Contains all your tab-related screens
-      |_ _layout.tsx         # Layout for tab navigation
-      |_ index.tsx           # Default tab screen
-      |_ lock.tsx            # Lock screen
-  
-  |_ components/             # Shared components used across the app
-      |_ AuthContext.tsx     # Context for authentication (NEW)
-      |_ EditScreenInfo.tsx
-      |_ ExternalLink.tsx
-      |_ StyledText.tsx
-      |_ Themed.tsx
+| tabs/ # Tab navigation screens
+| components/ # Shared React components
+| constants/ # App-wide constants
+| home/ # Home screen interface
+| state/ # State management
+| utils/ # Helper functions
+| navigation/ # Navigation configuration
 
-  |_ constants/              # Constants like colors, reusable variables, etc.
-      |_ Colors.ts
 
-  |_ home/                   # Group all home-related files
-      |_ Home.tsx
+## Security
 
-  |_ firebaseConfig.ts       # Firebase configuration and initialization
+Security is our top priority. The system implements:
+- Real-time monitoring
+- Automatic session management
+- Fail-safe mechanisms
 
-  |_ state/                  # NEW DIRECTORY for state management
-      |_ AuthContext.tsx     # Manages auth state across the app
-      |_ useAuth.ts          # Hook for accessing auth state in functional components
-      |_ SecureStore.ts      # Handles secure token storage (optional)
+## Development
 
-  |_ utils/                  # Utility functions/helpers
-      |_ helpers.ts          # Miscellaneous reusable functions
-      |_ validations.ts      # Validation functions like email or password validation
+This project represents a full-stack development effort, including:
+- Embedded C++ development
+- Mobile app development
+- Backend infrastructure
+- Physical lock mechanism design
+- Security protocol implementation
 
-  |_ App.tsx                 # Entry point of the app
-  |_ navigation/             # NEW DIRECTORY for navigation
-      |_ AppNavigator.tsx    # Handles all navigation stacks
-      |_ TabNavigator.tsx    # Tab-based navigation
+---
