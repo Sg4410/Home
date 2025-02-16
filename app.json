@@ -33,7 +33,13 @@
     },
     "plugins": [
       "expo-router",
-      "@react-native-google-signin/google-signin"
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-font",
+        {
+          "fonts": ["node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

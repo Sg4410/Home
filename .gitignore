@@ -12,6 +12,7 @@ GoogleService-Info.plist
 dist/
 web-build/
 expo-env.d.ts
+system_instruction.txt
 
 # Native
 *.orig.*

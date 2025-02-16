@@ -1,19 +1,20 @@
-
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
-import LockScreen from '../screens/LockScreen';
-import RenderScreen from '../screens/RenderScreen';
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 const TabNavigator = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Lock" component={LockScreen} />
-      <Tab.Screen name="Render Screen" component={RenderScreen} />
-    </Tab.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen 
+        name="Home" 
+        component={HomeScreen}
+        options={{
+          headerShown: false // Hide the navigation header
+        }}
+      />
+    </Stack.Navigator>
   );
 };
 
